@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import com.jfoenix.controls.*?>
+<?import com.jfoenix.transitions.hamburger.HamburgerBackArrowBasicTransition?>
+<?import javafx.scene.layout.*?>
+<StackPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.janloong.jlogger.gui.MainController">
+    <children>
+        <BorderPane fx:id="bp_root">
+            <top>
+                <VBox spacing="20">
+                    <JFXToolbar>
+                        <leftItems>
+                            <JFXRippler maskType="CIRCLE" style="-fx-ripple-color:WHITE;">
+                                <StackPane fx:id="titleBurgerContainer" onMouseClicked="#caa">
+                                    <JFXHamburger fx:id="titleBurger">
+                                        <HamburgerBackArrowBasicTransition/>
+                                    </JFXHamburger>
+                                </StackPane>
+                            </JFXRippler>
+                        </leftItems>
+                        <rightItems>
+                            <JFXRippler fx:id="optionsRippler" maskType="CIRCLE"
+                                        style="-fx-ripple-color:WHITE;">
+                                <StackPane fx:id="optionsBurger">
+                                    <JFXHamburger styleClass="jfx-options-burger">
+                                    </JFXHamburger>
+                                </StackPane>
+                            </JFXRippler>
+                        </rightItems>
+                    </JFXToolbar>
+                </VBox>
+            </top>
+            <center>
+                <!--<JFXDrawer fx:id="drawer" defaultDrawerSize="250" direction="LEFT">-->
+                <!--<styleClass>-->
+                <!--<String fx:value="body"/>-->
+                <!--</styleClass>-->
+                <!--</JFXDrawer>-->
+                <!--<GridPane >-->
+                    <!--<JFXColorPicker></JFXColorPicker>-->
+
+                <!--</GridPane>-->
+            </center>
+        </BorderPane>
+    </children>
+</StackPane>
